@@ -6,6 +6,19 @@
     <title>IT38 Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        .flex-container {
+          display: flex;
+          flex-wrap: nowrap;
+        }
+        
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 25%;
+          margin: 10px;
+          text-align: center; 
+        }
+        </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -44,5 +57,37 @@
           </div>
         </div>
       </nav>
+    <!--Dashboard Card-->
+        <div class="flex-container">
+    <!--Card 1: Total Card Admin Users-->
+        <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Admin Users</h5>
+                <h1>1</h1>
+            </div>
+        </div>
+    <!--Card 2: Total Users-->
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Users</h5>
+                <h1>5</h1>
+            </div>
+        </div>
+    <!--Card 3: Temp Users-->
+         <div class="card text-bg-warning text-white mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Temp Users</h5>
+                <h1>16</h1>
+            </div>
+        </div>
+    <!--Card 4: Total Users Accounts-->
+         <div class="card text-bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Total Users</h5>
+                <h1>22</h1>
+            </div>
+        </div>
+      </div>
+      
 </body>
 </html>
